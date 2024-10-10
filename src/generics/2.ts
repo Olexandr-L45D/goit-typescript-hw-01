@@ -14,6 +14,7 @@
 //         weight: bottom.weight,
 //     }
 // }
+// в top можуть бути значення "name" | "color" в bottom можуть бути "position" | "weight".А повертає функція об'єкт типу AllType
 
 interface AllType {
     name: string;
@@ -21,8 +22,10 @@ interface AllType {
     color: string;
     weight: number
 }
+type UserTopInfo = Pick<AllType, "name" | "color">;
+type UserBottomInfo = Pick<AllType, "position" | "weight">;
 
-function compare(top: AllType, bottom: AllType): Pick<AllType, "name" | "color" | "position" | "weight"> {
+function compare(top: UserTopInfo, bottom: UserBottomInfo): AllType {
     return {
         name: top.name,
         color: top.color,
@@ -32,5 +35,7 @@ function compare(top: AllType, bottom: AllType): Pick<AllType, "name" | "color" 
 }
 // console.log(compare);
 export { }
+
+
 
 

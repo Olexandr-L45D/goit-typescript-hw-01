@@ -3,7 +3,7 @@ let age: number = 50;;
 let username: string = 'Max';
 let toggle: boolean = true;
 let empty: null = null;
-let callback = (a1: number, a2: number) => {
+const callback = (a1: number, a2: number): number => {
     return a1 + a2;
 };
 
@@ -14,9 +14,9 @@ let callback = (a1: number, a2: number) => {
 // console.log(callback(100, 1));
 
 export { };
-    
-    
-    
+
+
+
 // const callback = (a) => { return 100 + a };
 
 
