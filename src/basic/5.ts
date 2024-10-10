@@ -1,4 +1,33 @@
-// 5 типізація enum
+type Weekdays = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday';
+type Weekend = 'Saturday' | 'Sunday';
+
+type DayOf = Weekdays | Weekend;
+
+enum DayOfWeek {
+    Monday = 'Monday',
+    Tuesday = 'Tuesday',
+    Wednesday = 'Wednesday',
+    Thursday = 'Thursday',
+    Friday = 'Friday',
+    Saturday = 'Saturday',
+    Sunday = 'Sunday'
+}
+
+function isWeekend(day: DayOfWeek) {
+    return day
+}
+
+// console.log(statusDay(DayOfWeek.Monday));
+
+// function isWeekend(day: DayOfWeek): boolean {
+//     if (Saturday | Sunday === true) {
+//         return Weekend;
+//     } else {
+//         Weekdays;
+//     }
+// }
+
+//task 5 типізація enum - для угрупування
 // enum DayOfWeek {
 //     Monday,
 //     Tuesday,
@@ -12,60 +41,3 @@
 // const isWeekend = (day) => {
 // }
 
-enum DayOfWeek {
-    Monday = 'Monday',
-    Tuesday = 'Tuesday',
-    Wednesday = 'Wednesday',
-    Thursday = 'Thursday',
-    Friday = 'Friday',
-    Saturday = 'Saturday',
-    Sunday = 'Sunday'
-}
-
-// const isWeekend = (day: DayOfWeek): boolean => {
-//     if (Saturday | Sunday === true) {
-//         return `The day is Hollyday ${day}`
-//     } else {
-//         return This is Wikday
-//     }
-// }
-// function isWeekend(day: DayOfWeek): boolean {
-//     if (day.Saturday | day.Sunday === true) {
-//         return `The day is Hollyday ${day}`
-//     } else {
-// return This is Wikday
-//     }
-// }
-
-enum AnimalIds {
-    cat = 'cat',
-    dog = 'dog',
-    fish = 'fish',
-}
-
-type Animal = {
-    [AnimalIds.cat]: {
-        meow: () => string;
-    };
-    [AnimalIds.dog]: {
-        bark: () => string;
-    };
-    [AnimalIds.fish]: {
-        swim: () => undefined;
-    };
-};
-
-// Створення об'єктів типу Animal
-let cat: Animal[AnimalIds.cat] = {
-    meow: () => 'Meow! I am a cat',
-};
-
-let dog: Animal[AnimalIds.dog] = {
-    bark: () => 'Woof! I am a dog',
-};
-
-let fish: Animal[AnimalIds.fish] = {
-    swim: () => undefined,
-};
-
-export { };

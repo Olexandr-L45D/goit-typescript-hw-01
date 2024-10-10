@@ -30,7 +30,7 @@ function compare(top: AllType, bottom: AllType): Pick<AllType, "name" | "color" 
         weight: bottom.weight,
     }
 }
-console.log(compare);
+// console.log(compare);
 export { }
 
 

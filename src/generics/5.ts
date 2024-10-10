@@ -1,15 +1,5 @@
 
-// export enum UserRole {
-//     admin = 'admin',
-//     editor = 'editor',
-//     guest = 'guest',
-// }
-// // Замініть наступний код на версію за допомогою Record
-// const RoleDescription = {
-//     admin: 'Admin User',
-//     editor: 'Editor User',
-//     guest: 'Guest User',
-// };
+
 export enum UserRole {
     admin = 'admin',
     editor = 'editor',
@@ -23,6 +13,22 @@ const RoleDescription: RoleTranslations = {
     guest: 'Guest User',
 };
 
-console.log(RoleDescription);
+// console.log(RoleDescription);
 
 export { };
+
+
+
+
+// task 5
+// export enum UserRole {
+//     admin = 'admin',
+//     editor = 'editor',
+//     guest = 'guest',
+// }
+// // Замініть наступний код на версію за допомогою Record
+// const RoleDescription = {
+//     admin: 'Admin User',
+//     editor: 'Editor User',
+//     guest: 'Guest User',
+// };

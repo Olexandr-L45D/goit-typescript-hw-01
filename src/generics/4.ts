@@ -1,4 +1,4 @@
-
+// task 4 -  Оновлення користувача
 type User = {
     id: number;
     name: string;
@@ -15,7 +15,7 @@ function createOrUpdateUser(initialValues: Partial<User>): User {
         email: '',
         password: '',
     };
-    // Оновлення користувача
+
     return { ...defaultUser, ...initialValues };
 }
 
@@ -23,7 +23,7 @@ const newUser = createOrUpdateUser({
     email: 'user@mail.com',
     password: 'password123'
 });
-console.log(newUser);
+// console.log(newUser);
 export { };
 
 
